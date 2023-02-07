@@ -264,4 +264,12 @@
   .footer-link:visited {
     font-size: 2rem;
   }
+
+  .link-box input {
+    padding-left: 2.1rem;
+  }
+
+  .button-box {
+    margin-left: 2rem;
+  }
 }

@@ -266,10 +266,18 @@
   }
 
   .link-box input {
-    padding-left: 2.1rem;
+    padding-left: -10rem;
+  }
+
+  .input-margin {
+    margin-left: 2.2rem;
   }
 
   .button-box {
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-left: 1rem;
   }
 }

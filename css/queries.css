@@ -1,0 +1,224 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/* How to caculate value = specified breakpoint eg-"1344px" divided by 16px =84em */
+
+/**************************/
+/* BELOW 1504px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 94em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-text-box {
+    width: 90%;
+    align-self: center;
+    justify-content: center;
+    padding-left: 3rem;
+  }
+
+  .heading {
+    text-align: center;
+    align-self: center;
+  }
+
+  .paragraph {
+    align-self: center;
+    font-size: 2.4rem;
+    line-height: 1.6;
+    margin-bottom: 3.8rem;
+    text-align: center;
+  }
+
+  .link-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    font-family: "Raleway";
+    transition: all 0.3s;
+  }
+
+  .link-box input {
+    color: #ced4da;
+    margin-right: 2rem;
+    border-radius: 9px;
+    padding-right: 20rem;
+    padding-left: 1.6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border: 1px solid hsl(0, 0%, 75%);
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .btn--full:link,
+  .btn--full:visited {
+    padding-left: 9rem;
+    padding-right: 10rem;
+    border: 2px solid hsl(224, 93%, 58%);
+
+    /* padding-left: 18rem; */
+    /* margin-right: 7rem; */
+    /* text-align: left; */
+  }
+
+  .img-box {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .curve {
+    max-width: 100%;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-text-box {
+    /* width: 90%; */
+    width: 90%;
+    align-self: center;
+    justify-content: center;
+    padding-left: 3rem;
+  }
+
+  .testimonial-container {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .testimonial {
+    background-color: #fff;
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+    /* padding: 8rem 4rem 4rem 2rem; */
+
+    padding-top: 7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 3rem;
+
+    width: 100%;
+    text-align: left;
+    border-radius: 7px;
+  }
+
+  .access {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .access-paragraph {
+    text-align: center;
+  }
+
+  .button-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-left: 4rem;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+  }
+
+  .contact-box {
+    display: flex;
+    gap: 2.4rem;
+    padding-left: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links-col {
+    margin: 0;
+  }
+
+  .social-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2.4rem;
+    margin-top: 8.4rem;
+  }
+
+  .phone-address {
+    font-size: 2.4rem;
+    /* font-weight: 600; */
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    text-decoration: none;
+    font-size: 2.4rem;
+  }
+
+  .social-icon {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 43.75%;
+    overflow-x: hidden;
+  }
+}

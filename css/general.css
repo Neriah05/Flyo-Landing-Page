@@ -1,0 +1,187 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: 
+- Strong Cyan: hsl(243, 87%, 12%)
+- Desaturated Blue: hsl(238, 22%, 44%)
+
+- Tints:
+
+- Shades: 
+
+
+- Accents:
+- Bright Blue: hsl(224, 93%, 58%)
+- Moderate Cyan: hsl(170, 45%, 43%)
+
+- Greys
+
+-- Light Grayish Blue: hsl(240, 75%, 98%)
+- Light Gray: hsl(0, 0%, 75%)
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  background-color: hsl(240, 75%, 98%);
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1140px */
+  max-width: 160rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 5.4rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  color: hsl(243, 87%, 12%);
+  text-align: left;
+}
+
+.paragraph {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  margin-bottom: 3.8rem;
+  text-align: left;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: "Raleway";
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  padding-left: 4rem;
+  padding-right: 15rem;
+  border: 2px solid hsl(224, 93%, 58%);
+
+  /* padding-left: 18rem; */
+  /* margin-right: 7rem; */
+  /* text-align: left; */
+}
+
+/*.btn--outline:link,
+.btn--outline:visited {
+  /* Trick to add border inside 
+  box-shadow: inset 0 0 0 3px hsl(0, 0%, 75%);
+  color: #ced4da;
+  margin-right: 7rem;
+  padding-right: 29rem;
+  padding-left: 1.6rem;
+}
+*/
+
+.link-box label {
+  display: inline-block;
+}
+
+.link-box input {
+  color: #ced4da;
+  margin-right: 2rem;
+  padding-right: 20rem;
+  padding-left: 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  border: 1px solid hsl(0, 0%, 75%);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.link-box input::placeholder {
+  color: #ced4da;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: hsl(239, 36%, 67%);
+  border-color: hsl(239, 36%, 67%);
+}
+
+/* .input-focus input *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+} */
+
+/* .btn--outline:hover,
+.btn--outline:active {
+  color: #555;
+} */

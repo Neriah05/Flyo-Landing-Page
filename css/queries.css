@@ -212,13 +212,56 @@
 }
 
 /**************************/
-/* BELOW 544px (Phones) */
+/* BELOW 640px (Phones) */
 /**************************/
 
-@media (max-width: 34em) {
+@media (max-width: 40em) {
   html {
-    /* 9px / 16px  */
-    font-size: 43.75%;
-    overflow-x: hidden;
+    /* 5px / 16px  */
+    font-size: 42.75%;
+  }
+
+  .heading {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 3.2rem;
+    color: hsl(243, 87%, 12%);
+    /* color: red; */
+    text-align: center;
+    align-self: center;
+  }
+
+  .paragraph {
+    font-size: 2rem;
+    line-height: 1.7;
+    margin-bottom: 3.8rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 4rem;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .access-paragraph {
+    font-size: 2rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+
+  .phone-address {
+    font-size: 2rem;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 2rem;
   }
 }

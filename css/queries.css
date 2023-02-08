@@ -227,6 +227,11 @@
   }
 
   /* MOBILE NAVIGATION */
+
+  body {
+    overflow-x: hidden;
+  }
+
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
